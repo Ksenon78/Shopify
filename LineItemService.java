@@ -74,8 +74,8 @@ public class LineItemService {
         lineItem.setQuantity(lineItemDTO.getQuantity());
         lineItem.setPricePerUnit(lineItemDTO.getPricePerUnit());
 
-        Order order = orderService.getOrderEntityById(lineItemDTO.getOrderId());  // Correct method
-        Product product = productService.getProductEntityById(lineItemDTO.getProductId());  // Correct method
+        Order order = orderService.getOrderEntityById(lineItemDTO.getOrderId());  
+        Product product = productService.getProductEntityById(lineItemDTO.getProductId());  
 
         lineItem.setOrder(order);
         lineItem.setProduct(product);
